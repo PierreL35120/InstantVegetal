@@ -1,0 +1,1049 @@
+/*#######################################################ENSEMBLE####################################*/
+/*#######################################################ENSEMBLE####################################*/
+/*#######################################################ENSEMBLE####################################*/
+
+
+*{ /* C'est pour donner les dimension de toute la page web*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* Pour avoir les bords définit entre le margin et padding*/
+	outline: none; /* pour pas qu'il y ait de bordure si il y a padding et marging*/
+	list-style: none; /* Pour toutes les listes ul ol, pas de style*/
+	text-decoration: none; /* 0 soulignement*/
+	font-family: 'Libre Baskerville', serif;
+  } 
+  
+  hr{
+	width: 30%;
+	margin-left: 35%;
+	margin-top: -2%;
+	margin-bottom: 2%;
+	color: #29344b;
+  }
+  
+  p{ 
+	margin-bottom: 15px;
+	line-height: 20px; /* Hauteur entre les lignes*/
+	color: #a9a9a9;
+	  
+  }
+  
+  h1{
+	font-weight: 100; /* Dureté du trait*/
+  }
+  
+  .title{
+	font-weight: 100;
+	padding-top: 50px;
+	color: #E77B73;
+	font-family: 'Cinzel',cursive;
+	text-transform: uppercase;
+	word-spacing: 25px; /* espace entre les mots*/
+	letter-spacing: 5px; /*espace entre les lettres*/
+	text-align: center;
+	font-size: 150%;    
+  } 
+  
+  
+  
+  .main_container{ /*div qui englobe tout le code sauf le footer*/
+	position: relative; /* Relative : s'agence par rapport aux autres éléments et 
+	  abolue : position dans la page sans tenir compte des autres éléments*/
+  
+  } 
+  
+  .arrow{
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	width: 40px;
+	height: 40px;
+	line-height: 50px; /*Hauteur entre les lignes */
+	text-align: center; /* Pour que la flèche soit bien au centre de l'image*/
+	cursor: pointer; /* Pour que le pointeur change*/
+	background: #CFB097;
+	border-radius: 50%; /* carré à la base */
+	transition: transform 0.7s, box-shadow 0.7s; /* la flèche grossit quand visitée, le scale est définit*/
+  }
+  
+  .arrow:hover{ /* Quand tu passes la sourie dessus*/
+	transform: scale(1.5); /* ici c'est le grossisement, on met que la transition est un scale */
+	box-shadow: 5px 30px 10px #29344b;
+  }
+  
+  .arrow img{ /* fond bleu*/
+	width: 20px;
+	height: 20px;
+  }
+  
+  
+  /* ########################################################CINDY#####################################*/
+  /* ########################################################CINDY#####################################*/
+  /* ########################################################CINDY#####################################*/
+  
+  
+  
+  
+  nav{
+	width: 100%;
+	height: 85px;
+	display: flex; /*Pour mettre les espaces entre les éléments avec space around*/
+	justify-content: space-around; /*Laisse plusieurs option, définit la manière dont les éléments dans la div sont 
+	positionnés, ici les afficher en ligne avec un léger espace*/
+	align-items: center; /*Les mettre au milieu des cases*/
+	position: fixed; /*Quand tu descends il descend avec toi*/
+	background: linear-gradient(#CFB097,#e6e6e6,#fff, #fff, #fff);
+	z-index: 100;
+  } 
+  
+  .logo{
+	font-family: 'La Belle Aurore', cursive;
+	font-size: 40px;
+	color: #E77B73;
+	transition: color 0.7s, font-size 0.7s;
+  
+  }
+  
+  .logo:hover{
+	color: #CFB097;
+  }
+  
+  nav .navbar_items ul{
+	display: flex; /*pour que ça s'affiche pas en colonne*/
+  }
+  
+  
+  nav .navbar_items ul li{
+	  
+	text-transform: uppercase;
+	margin: 0 10px;
+  }
+  
+  nav .navbar_items ul li a{
+	color: #CFB097;
+	font-weight: 100;
+	font-family: 'Cinzel', cursive;
+	border-bottom: 2px solid transparent;
+	transition: color 0.7s, font-size 0.7s, border-bottom 0.7s;
+	  
+  }
+  
+  nav .navbar_items ul li a:hover{
+	color: #E77B73;
+	border-bottom: 2px solid #CFB097;
+	font-size: 110%;
+  }
+  
+  .banner_image{
+	background: linear-gradient(rgba(117, 79, 44, 0.1), rgba(121, 81, 45, 0.1)), url("img/bouquet-deuil.jpg") no-repeat top center;
+	background-size: cover;/*Prend toute la page*/
+	background-attachment: fixed;
+	width: 100%;
+	height: 120vh; /* 100 vh = Tout l'affichage*/
+	align-items: center;
+	background-position: left;   
+  }
+  
+  
+  /* ########################################################Basile#####################################*/
+  /* ########################################################BASILE#####################################*/
+  /* ########################################################Basile#####################################*/
+  
+  .services{
+	background: #F5F5F5;
+	text-align: center;
+	margin-top: -10%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	padding-top: 2%;
+  }
+  .services h1{
+	padding-bottom: 5%;
+  }
+  .sousservices{
+	display: flex;
+	margin-top: 35px;
+	height: 50vh;
+	width: 70%;
+	margin-left: 16%;
+	justify-content: space-between;
+  }
+  .sousservices_element{
+	width: 30%;
+  }
+  .sousservices_element img{
+	width: 80%;
+	margin-bottom: 25px;
+	border-radius: 5px;
+	box-shadow: 1px 5px 5px #29344B;
+	transition: transform 0.7s, box-shadow 0.7s;
+  }
+  .sousservices_element img:hover{
+	transform: scale(1.2);
+	box-shadow: 5px 10px 40px #29344B;
+  }
+  .sousservices_element h3{
+	color: #E77B73;
+	margin-bottom: 17px;
+	font-family: 'Cinzel',cursive;
+	font-size: 80%;
+  }
+  .sousservices_element p{
+	color: #29344B;
+	font-size: 14px;
+	font-family: 'Libre Baskerville', serif;
+	font-style: normal;
+	text-align: justify;
+	line-height: normal;
+  }
+  
+  #large{
+   width: 22%;
+   position: absolute;
+   margin-left: -4%;	
+  }
+  
+  #large2{
+	width: 22%;
+	position: absolute;
+	padding-top: 2px;	
+  }
+  
+  #large3{
+	width: 24%;
+	position: absolute;
+	margin-left: -2%;
+	margin-top: -2px;
+  }
+  
+  #element1{
+	width: 20%;
+  }
+  #element2{
+	width: 20;
+  }
+  #element3{
+	width: 27%;
+  }
+  .back{
+	background: url("img/magasin3.jpg") no-repeat top center;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 50vh;
+	margin-top: -30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .supplements{
+	padding-top: 2%;
+	width: 100%;
+	height: 150%;
+	text-align: center;
+  }
+  .supplements h1{
+	padding-bottom: 1%;
+  }
+  .supplements p{
+	color: #CFB097;
+	padding-bottom: 4%;
+	font-family: 'Libre Baskerville', serif;
+  }
+  .fonddore{
+	width: 90%;
+	height: 220vh;
+	margin-left: 5%;
+	padding: 5% 0 0 0;
+  }
+  .soustxt{
+	margin-left: 15%;
+	line-height: 10px;
+	padding-top: 2%;
+	margin-bottom: 3%;
+  }
+  .soustxt i{
+	font-size: 300%;
+	float: left;
+  }
+  .soustxt p{
+	width: 85%;
+	padding-bottom: 5%;
+	font-size: 90%;
+	font-family: 'Libre Baskerville', serif;
+  }
+  .couleur{
+	background-color: #CFB097;
+	width: 50%;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #29344B;
+  }
+  .textfond p{
+	padding-top: 1%;
+	text-align: justify;
+	line-height: 30px;
+	margin-left: 10%;
+	color: #29344B;
+  }
+  .textfond ul{
+	font-size: 110%;
+	padding-top: 20px;
+	line-height: 30px;
+	margin-left: 10%;
+	color: #29344B;
+  }
+  .textfond ul li{
+	font-family: 'Libre Baskerville', serif;
+  }
+  .textfond ul li::before {
+	content: "\2022";
+	color: #CFB097;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1.2em;
+  }
+  .liste{
+	border:2px solid #CFB097;
+	border-radius: 50px;
+	width: 50%;
+	padding: 4% 4% 4% 0;
+	margin-left: 25%;
+	margin-top: 12%;
+	margin-bottom: 1%;
+  }
+  .liste p{
+	text-align: center;
+	color: #CFB097;
+	font-family: 'Cinzel', cursive;
+	  
+  }
+  
+  .liste ul li{
+	margin-left: 3%;
+	font-style: italic;
+  }
+  
+  #trozoli{
+	font-size: 300%;
+	
+  }
+  .images{
+	display: flex;
+	flex-direction: column;
+	margin-top: -197vh;
+	float: right;
+	margin-right: 15%;
+  }
+  .images img{
+	width: 170px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	box-shadow: 1px 5px 5px #29344B;
+	transition: transform 0.7s, box-shadow 0.7s;
+  }
+  .images img:hover{
+	transform: scale(1.2);
+	box-shadow: 10px 10px 20px #29344B;
+  }
+  
+  /* ########################################################Pierre#####################################*/
+  /* ########################################################PIERRE#####################################*/
+  /* ########################################################Pierre#####################################*/
+  
+  
+  .sec div p{
+	  font-family: 'Libre Baskerville', serif;
+	  font-size: 110%;
+	  padding-top: 5%;
+  }
+  
+  .secpart{
+	  padding-bottom: 2%;
+  }
+  
+  .degrador{
+	  background: linear-gradient(#ffffff, rgba(207, 176, 151, 0.3));
+	  height: 30px;
+	  margin-top: 6%;
+  
+  }
+  
+  
+  .divred{
+	width: 50%;
+	transform:translate(-50%);
+	margin-left: 50%;	
+	text-align: center;
+  }
+  
+  #goldtext{
+	color:#cfb097;
+	font-family: 'Libre Baskerville', serif;
+	padding-top: 1%;
+	text-align: center;
+	font-size: 14px;
+  }
+  
+  #redtext{
+	color:#A9A9A9;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 14px;
+	padding-top: 3%;
+  
+  }
+  
+  .dor{
+	background-color: rgba(207, 176, 151, 0.3);
+	padding-top: 20px;
+  }
+  
+  .redba{
+	width: auto;
+	height: 1px;
+  }
+  
+  
+  .dor p{
+	color:#29344B;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 150%;
+	text-align: center;
+	line-height: 125%;
+  }
+  
+  #picfirst{
+	width: 300px;
+	height: 300px;
+	margin-top: 3%;
+	margin-left: -10%;
+	position: absolute;
+	transition: transform 0.7s;
+  }
+  
+  
+  #picsecond{
+	margin-top: -10%;
+	width: 300px;
+	height: 300px;
+	margin-bottom: 5%;
+  }
+  
+  #picthird{
+	width: 400px;
+	height: 200px;
+	margin-bottom: 5%;
+  }
+  
+  
+  
+  .rosest,
+  .cadrest,
+  .bouquett
+  {
+	width: 30%;
+	position: absolute;
+	margin-top: 5px;
+  }
+  
+  .textor{
+	margin-top: 10%;
+	padding-bottom: 10%;
+	  
+  }
+  
+  .textor p{
+	text-align: justify;
+  }
+  
+  .rosest{
+	margin-left: 55%;
+	margin-top: -14%;	
+  }
+  .rosesi{
+	margin-left: 75%;
+	margin-top: -7%;
+  }
+  
+  .cadrest{
+	margin-left: 45%;
+	margin-top: -28%;
+  }
+  
+  .cadresi{
+	margin-left: 20%;
+  }
+  
+  .bouquett{
+	margin-top: 1%;
+	margin-left: 68%;
+  }
+  
+  .bouqueti{
+	margin-left: 50%;
+  }
+  
+  .rosesi,
+  .cadresi,
+  .bouqueti{
+	transform: translate(-50%);
+	height: 300px;
+	box-shadow: 10px 7px 5px #29344B;
+	border-radius: 5px;		
+  }
+  
+  .cloche1{
+	margin-left: 7%;
+  }
+  
+  .cloche1 img{
+	display: inline-flex;
+	height: 150px;
+	width:150px;
+	margin-left: 2.5%;
+	margin-top: 3%;
+	margin-bottom: 10%;
+	box-align:center;
+	box-shadow: 10px 7px 5px #29344B;
+	border-radius: 5px;
+	transition: transform 0.7s, box-shadow 0.7s;		
+  }
+  
+  .cloche1 img:hover{
+	transform: scale(1.3);
+	box-shadow: 12px 10px 5px #29344B;
+  }
+  
+  .cloche1 p{
+	margin-bottom: 7%;
+	margin-left: 15%;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 8px;
+	margin-top: -7%;
+	width: 70%;
+  }
+  
+  .cloche1 hr{
+	margin-top: -9%;
+	margin-left: 32%;
+	position: absolute;
+  }
+  
+  .cloche2 img{
+	display: inline-flex;
+	height: 200px;
+	margin-left: 25%;
+	box-align:center;
+	box-shadow: 10px 7px 5px #29344B;		
+	border-radius: 5px;
+  }
+  
+  .grisor{
+	background: linear-gradient(rgba(207, 176, 151, 0.3),#29344B);
+	height: 30px;
+  }
+  
+  
+  footer{
+	width: 100%;
+	height: 180px;
+	text-align: center;
+	background: #444444;
+	padding: 5px 0;
+  }
+  footer p{
+	color: #fff;
+	font-size: 12px;
+  }
+  footer li,
+  footer a{
+	color: #fff;
+	font-size:15px;
+  }
+  .credits{
+	position: absolute;
+	display: inline-block;
+	font-size: 9px;
+	color:white;
+	margin-left: -4%;
+  }
+  .service{
+	line-height: 155%;
+  }
+  .lieu{
+	line-height: 150%;
+  }
+  .tel{
+	font-size: 150%;
+  }
+  footer h3{
+	color: #E77B73;
+	margin-bottom: 5px;
+	text-decoration: underline 1px;
+  }
+  .icones{  margin-left: 45%;
+  }
+  .facebook{
+	height: 44px;
+	width: 44px;
+	margin-bottom: 1px;
+  }
+  .facebook:hover{
+	box-shadow: #3B5998 0px 0px 4px 5px;
+	border-radius: 15%;
+	background-color: #3B5998;
+  }
+  .instagram{
+	height: 43px;
+	width: 43px;
+	margin-top: 10px;
+  }
+  .instagram:hover{
+	box-shadow: #833AB4 0px 0px 5px 5px;
+	border-radius: 15%;
+	background-color: #833AB4;
+  }
+  .contactimg{
+	width: 40%;
+  }
+  .contact{
+	background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(img/magasin3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-shadow: #20B2AA 2px 0 5px;
+	margin-top: -7%;
+	height: 500px;
+  }
+  .form{
+	box-shadow: #29344B 0px 0px 1px 1px;
+  }
+  .form2{
+	box-shadow: #29344B 0px 0px 1px 1px;
+  }
+  textarea{
+	width: 100%;
+	height: 150%;
+  }
+  
+  
+  
+  
+  /*###############################################MEDIAQUERIE########################################*/
+  /*###############################################ENSEMBLE############################################*/
+  /*###############################################MEDIAQUERIE########################################*/
+  
+  
+  
+  
+  @media only screen and (min-width: 1024px) and (max-width: 1600px){
+  
+	  .images{
+		display: flex;
+		flex-direction: column;
+		float: right;
+		width: 17%;
+		margin-right: 10%;
+		margin-top: -102%;
+	  }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px){
+  
+	  nav{
+		height: auto;
+		flex-direction: column;
+		position: absolute;
+		background: none;
+		animation: none;
+	  }
+  
+	  nav ul{
+		flex-direction: column;
+		text-align: center;
+	  }
+  
+	  nav ul li{
+		margin-bottom: 5px;
+		font-size: 120%;
+		line-height: 350%;
+	  }
+  
+	  nav ul li a{
+		font-weight: bold;
+		background-color: #29344b;
+		padding: 4px 4px 4px 4px;
+		border-radius: 10px;
+	  }
+  
+	  .logo{
+		font-family: 'La_Belle_Aurore', cursive;
+		font-size: 45px;
+		color: #e77b73;
+		transition: color 0.7s, font-size 0.7s;
+	  }
+	
+	  .logo:hover{
+		color: #cfb097;
+		font-size: 350%;
+	  }
+  
+	  .services{
+		padding-bottom: 25vh;
+	  }
+  
+	  .sousservices{
+		width: 90%;
+		margin-left: 5%;
+		justify-content: space-between;
+	  }
+  
+	.sousservices_element h3{
+		 font-size: 80%;
+	}
+  
+	  .icones{
+		margin-left: 40%;
+	  }
+  
+	  .credits{
+		position: absolute;
+		display: inline-block;
+		font-size: 9px;
+		color:white;
+		margin-left: -7%;
+	  }
+	  .banner_image{
+		height: 70vh; /* 100 vh = Tout l'affichage*/
+		margin-top: -20px;
+		background-position: center;
+  
+	  }
+  
+  
+	  .back{
+		height: 30vh;
+	  }
+  
+	  .supplements{
+		width: 100%;
+		height: 100%;
+		text-align: center;
+	  }
+  
+	  .soustxt i{
+		font-size: 400%;
+		float: none;
+		padding-left: 0;
+	  }
+  
+	  .fonddore{
+		width: 100%;
+		height: 420vh;
+		margin-left: 0;
+	  }
+  
+	  .textfond{
+		margin-left: 15%;
+	  }
+  
+	  .textfond p{
+		padding-top: 20px;
+		text-align: center;
+		line-height: 30px;
+		margin-right: 10%;
+		font-size: 20px;
+	  }
+  
+	  .textfond ul{
+		text-align: center;
+		margin-right: 1%;
+		font-size: 20px;
+	  }
+  
+	  .images{
+		margin-top: 10px;
+		float: right;
+		margin-right: 41%;
+	  }
+  
+	  .images img{
+		margin-bottom: 30px;
+		display: flex;
+		flex-direction: column;
+		width: 200px;
+	  }
+	  .liste{
+		border:2px solid #cfb097;
+		border-radius: 50px;
+		width: 40%;
+		padding: 5% 0 5% 0;
+		margin-left: 15%;
+		position: absolute;
+		margin-top: 100%;
+	  }
+  
+	  #picfirst{
+		width: 150px;
+		height: 150px;
+		margin-top: 3%;
+		margin-left: -10%;
+		position: absolute;
+		transition: transform 0.7s;
+	  }
+	  
+	  
+	  #picsecond{
+		margin-top: -10%;
+		width: 150px;
+		height: 150px;
+		margin-bottom: 5%;
+	  }
+	  
+	  #picthird{
+		width: 200px;
+		height: 100px;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		margin-left: 33%;
+		position: absolute;
+	  }
+  
+	  .rosest{
+		margin-left: 55%;
+		margin-top: -12%;	
+	  }
+  
+	  .cadrest{
+		margin-left: 45%;
+		margin-top: -22%;
+  
+	  }
+  
+	  .bouquett{
+		margin-top: 1%;
+		margin-left: 60%;
+	  }
+  
+	  .textor{
+		height: 70vh;
+	  }
+  
+  }
+  
+  @media only screen and (min-width: 480px) and (max-width: 768px){
+	  nav{
+		height: auto;
+		flex-direction: column;
+		position: absolute;
+		background: none;
+		animation: none;
+	  }
+  
+	  nav ul{
+		flex-direction: column;
+		text-align: center;
+	  }
+  
+	  nav ul li{
+		margin-bottom: 5px;
+		font-size: 120%;
+		line-height: 350%;
+	  }
+  
+	  nav ul li a{
+		font-weight: bold;
+		background-color: #29344b;
+		padding: 4px 4px 4px 4px;
+		border-radius: 10px;
+	  }
+  
+	  .logo{
+		font-family: 'La_Belle_Aurore', cursive;
+		font-size: 45px;
+		color: #e77b73;
+		transition: color 0.7s, font-size 0.7s;
+	  }
+	
+	  .logo:hover{
+		color: #cfb097;
+		font-size: 350%;
+	  }
+  
+	  .services{
+		padding-bottom: 25vh;
+	  }
+  
+	  .sousservices{
+		width: 90%;
+		margin-left: 5%;
+		justify-content: space-between;
+	  }
+  
+	  .sousservices_element h3{
+		  font-size: 80%;
+	  }
+  
+	  #large{
+		width: 22%;
+		position: absolute;
+		margin-left: -1%;	
+	  }
+		 
+	  #large2{
+		width: 22%;
+		position: absolute;
+		padding-top: 2px;
+		margin-left: 3%;	
+	  }
+		 
+	  #large3{
+		width: 24%;
+		position: absolute;
+		margin-left: 1%;
+		margin-top: -2px;
+	  }
+	  .icones{
+		margin-left: 40%;
+	  }
+  
+	  .credits{
+		position: absolute;
+		display: inline-block;
+		font-size: 9px;
+		color:white;
+		margin-left: -7%;
+	  }
+	  .banner_image{
+		height: 70vh; /* 100 vh = Tout l'affichage*/
+		margin-top: -20px;
+		background-position: center;
+	  }
+	  .back{
+		height: 30vh;
+	  }
+  
+	  .supplements{
+		width: 100%;
+		height: 100%;
+		text-align: center;
+	  }
+  
+	  .soustxt i{
+		font-size: 400%;
+		float: none;
+		padding-left: 0;
+	  }
+  
+	  .soustxt p{
+		text-align: center;
+	  }
+  
+	  .fonddore{
+		width: 100%;
+		height: 450vh;
+		margin-left: 0;
+	  }
+  
+	  .textfond{
+		margin-left: 15%;
+	  }
+  
+	  .textfond p{
+		padding-top: 20px;
+		text-align: center;
+		line-height: 30px;
+		margin-right: 10%;
+		font-size: 20px;
+	  }
+  
+	  .textfond ul{
+		text-align: center;
+		margin-right: 1%;
+		font-size: 20px;
+	  }
+  
+	  .images{
+		margin-top: 10px;
+		float: right;
+		margin-right: 35%;
+	  }
+  
+	  .images img{
+		margin-bottom: 30px;
+		display: flex;
+		flex-direction: column;
+		width: 200px;
+	  }
+	  .liste{
+		border: 2px solid #cfb097;
+		border-radius: 50px;
+		width: 40%;
+		padding: 5% 0 5% 0;
+		margin-left: 15%;
+		position: absolute;
+		margin-top: 130%;
+	  }
+	  #picfirst{
+		width: 150px;
+		height: 150px;
+		margin-top: 20%;
+		margin-left: 20%;
+		position: absolute;
+		transition: transform 0.7s;
+	  }
+	  
+	  
+	  #picsecond{
+		  
+		width: 150px;
+		height: 150px;
+		margin-bottom: 5%;
+		position: absolute;
+	  }
+	  
+	  #picthird{
+		width: 200px;
+		height: 100px;
+		margin-top: 50%;
+		margin-bottom: 5%;
+		margin-left: 24%;
+		position: absolute;
+	  }
+  
+	  .rosest{
+		margin-left: 45%;
+		margin-top: 20%;	
+	  }
+  
+	  .cadrest{
+		margin-left: 45%;
+		margin-top: -6%;
+		position: absolute;
+  
+	  }
+  
+	  .bouquett{
+		margin-top: 47%;
+		margin-left: 45%;
+	  }
+  
+	  .textor{
+		height: 100vh;
+	  }
+	  .sec div p{
+		font-family: 'Libre Baskerville', serif;
+		font-size: 90%;
+		padding-top: 5%;
+	  }
+  
+	  .cloche1 p{
+		margin-bottom: 10%;
+	  }
+  
+	
+  }
+  
+  /*################################################MEDIAQUERIE#######################################*/
+  /*##################################################ENSEMBLE########################################*/
+  /*################################################MEDIAQUERIE#######################################*/
